@@ -1,0 +1,38 @@
+Description: replace @wessberg/rollup-plugin-ts using previously build files
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-11-26
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,22 +1,19 @@
+-import ts from 'rollup-plugin-ts'
+-import transformDefaultExport from 'ts-transform-default-export'
++import commonjs from "@rollup/plugin-commonjs"
++import {nodeResolve} from "@rollup/plugin-node-resolve"
+ 
+-const output = {
++const output = [{
+   format: 'cjs',
+   file: './build/index.cjs',
+-  exports: 'default'
+-}
++  name: 'yargs-parser',
++}]
+ 
+ if (process.env.NODE_ENV === 'test') output.sourcemap = true
+ 
+ export default {
+-  input: './lib/index.ts',
++  input: './build/lib/index.js',
+   output,
+   plugins: [
+-    ts({
+-      transformers: ({ program }) => ({
+-        afterDeclarations: transformDefaultExport(program)
+-      })
+-    })
++    commonjs(),
++    nodeResolve(),
+   ]
+ }

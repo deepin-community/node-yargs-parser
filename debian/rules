@@ -6,3 +6,10 @@
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	tsc
+	rollup -c
+
+override_dh_auto_test:
+	# No test during build to avoid circular dependency to node-mocha

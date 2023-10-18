@@ -1,3 +1,85 @@
+node-yargs-parser (21.1.1+~21.0.0-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-yargs-parser: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 07 Dec 2022 23:48:45 +0000
+
+node-yargs-parser (21.1.1+~21.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Allow __proto__ access during autopkgtest: test verifies pollution
+
+ -- Yadd <yadd@debian.org>  Fri, 28 Oct 2022 16:50:27 +0200
+
+node-yargs-parser (21.1.1+~21.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Add build links for rollup 3 (Closes: #1022699)
+
+ -- Yadd <yadd@debian.org>  Fri, 28 Oct 2022 16:15:35 +0200
+
+node-yargs-parser (21.1.1+~21.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 21.1.1+~21.0.0
+
+ -- Yadd <yadd@debian.org>  Mon, 08 Aug 2022 21:17:31 +0200
+
+node-yargs-parser (21.0.1+~21.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 21.0.1+~21.0.0
+  * Refresh patches
+
+ -- Yadd <yadd@debian.org>  Thu, 03 Mar 2022 20:12:22 +0100
+
+node-yargs-parser (21.0.0+~20.2.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Disable test during build to avoid circular dependency to mocha
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Fri, 14 Jan 2022 11:20:58 +0100
+
+node-yargs-parser (21.0.0+~20.2.1-2) experimental; urgency=medium
+
+  * Team upload
+  * Add Breaks: node-yargs (<< 16.2.0~)
+
+ -- Yadd <yadd@debian.org>  Thu, 13 Jan 2022 14:55:36 +0100
+
+node-yargs-parser (21.0.0+~20.2.1-1) experimental; urgency=medium
+
+  * Team upload
+  * Fix debian/watch
+  * New upstream version 21.0.0+~20.2.1
+  * Drop workaround-tsc-update.patch
+
+ -- Yadd <yadd@debian.org>  Fri, 07 Jan 2022 15:18:42 +0100
+
+node-yargs-parser (20.2.7+~20.2.1-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 20.2.7+~20.2.1
+  * Embed gts for build only
+  * Build with tsc and rollup (with patches)
+  * Update test
+
+ -- Yadd <yadd@debian.org>  Fri, 07 Jan 2022 15:09:22 +0100
+
+node-yargs-parser (18.1.3+~15.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * Mark test dependencies with <!nocheck>
+
+ -- Yadd <yadd@debian.org>  Fri, 26 Nov 2021 11:11:07 +0100
+
 node-yargs-parser (18.1.3+~15.0.0-1) unstable; urgency=medium
 
   * Team upload
