@@ -1,1 +1,1 @@
-mocha test/*.js
+mocha test/*.cjs
